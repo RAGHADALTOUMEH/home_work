@@ -59,10 +59,10 @@ class Truck extends Vehicle {
 }
 
 void main() {
-  List<Vehicle> vehicles = [
-    Bus("City Bus", 0.2, 25, 0.1),
-    Truck("Delivery Truck", 0.5, 2, 1500),
-  ];
+  Bus b1 = Bus("City Bus", 0.2, 25, 0.1);
+  Truck t1 = Truck("Delivery Truck", 0.5, 2, 1500);
+
+  List<Vehicle> vehicles = [b1, t1];
 
   List<double> distances = [100, 200, 50];
 }
