@@ -1,23 +1,18 @@
 import 'package:flutter/material.dart';
-import 'screens/input.dart';
+import 'screens/bmi_calculate_screen.dart';
 
-void main() => runApp(const BMICalculatorApp());
+void main() {
+  runApp(const MyApp());
+}
 
-class BMICalculatorApp extends StatelessWidget {
-  const BMICalculatorApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    const backgroundColor = Color(0xFF0A0E21);
-    const pinkColor = Color(0xFFEB1555);
-
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: backgroundColor,
-        colorScheme: ColorScheme.fromSwatch().copyWith(secondary: pinkColor),
-      ),
-      home: const InputPage(),
+      home: const BMICalculatorScreen(),
     );
   }
 }
